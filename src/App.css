@@ -1,3 +1,6 @@
+body {
+}
+
 .App {
   text-align: center;
 }
@@ -9,8 +12,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #eab543;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +24,25 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.cool {
+  cursor: url('./images/modda2.png'), auto;
+  background-color: #27ae60;
+  width: 100%;
+}
+
+.lame {
+  cursor: url('./images/modda.png'), auto;
+  background-color: #d35400;
+  width: 100%;
 }
 
 @keyframes App-logo-spin {
