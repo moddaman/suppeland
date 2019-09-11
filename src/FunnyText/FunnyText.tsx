@@ -1,52 +1,106 @@
-import React, { useRef, useEffect, useState } from 'react';
-import style from './FunnyText.module.scss';
-import classNames from 'classnames';
+import React, { useRef, useEffect, useState } from "react";
+import style from "./FunnyText.module.scss";
+import classNames from "classnames";
 
 interface IProps {
   text: string;
-  type?: TYPE;
-  repeat?: REPEAT;
 }
 
-type TYPE = 'DEFAULT' | 'BOOGEY' | 'WAVE';
+type FontSize = "5vh" | "7vh" | "10vh";
 
-type REPEAT = 'ONETIME' | 'LOOP';
+interface IText {
+  symbol: string;
+  fontsize: FontSize;
+}
 
-const FunnyText = ({ text, type = 'BOOGEY', repeat = 'ONETIME' }: IProps) => {
-  const textArray = text.split('');
+const toText = (symbol: string): IText => {
+  return {
+    symbol,
+    fontsize: "5vh"
+  };
+};
 
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
+const FunnyText = ({ text }: IProps) => {
+  const textArray = text.split("").map(toText);
 
-  useInterval(function() {
-    if (currentIndex < textArray.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    } else {
-      setCurrentIndex(0);
-    }
-  }, 200);
+  const [symbols, setSymbols] = useState(textArray);
+  const [currentIndex, setCurrentIndex] = useState<number>(100);
 
+  useInterval(
+    function() {
+      if (currentIndex <= textArray.length) {
+        setCurrentIndex(currentIndex + 1);
+      } else {
+        setCurrentIndex(0);
+      }
+    },
+    200,
+    textArray.length + 1
+  );
+
+  const defaultText = () => {
+    const newSymbols = symbols.map<IText>((s, i) => {
+      return {
+        ...s,
+        fontsize: "5vh"
+      };
+    });
+    setSymbols(newSymbols);
+  };
+
+  const enlargeFont = (symbol: IText, index: number) => {
+    console.log(index);
+
+    const newSymbols = symbols.map<IText>((s, i) => {
+      if (i === index) {
+        return {
+          ...s,
+          fontsize: "10vh"
+        };
+      }
+      if (i === index - 1 || i === index + 1) {
+        return {
+          ...s,
+          fontsize: "7vh"
+        };
+      }
+      return {
+        ...s,
+        fontsize: "5vh"
+      };
+    });
+
+    setSymbols(newSymbols);
+  };
+  console.log(symbols);
   return (
-    <div className={style.basic}>
-      {textArray.map((t, index) => {
+    <div className={style.basic} onMouseOut={defaultText}>
+      {symbols.map((symbol, index) => {
         const currentStyle = classNames({
-          [style.hardChange]: index === currentIndex && type === 'DEFAULT',
-          [style.smoothChange]: index === currentIndex && type === 'BOOGEY',
-          [style.waveChange]: index === currentIndex && type === 'WAVE'
+          [style.show]: index < currentIndex,
+          [style.hide]: index >= currentIndex
         });
+        const divStyle = {
+          fontSize: symbol.fontsize
+        };
         return (
-          <span key={index} className={currentStyle}>
-            {t}
-          </span>
+          <div
+            onMouseOver={() => enlargeFont(symbol, index)}
+            key={index}
+            style={divStyle}
+            className={classNames(currentStyle)}
+          >
+            {symbol.symbol}
+          </div>
         );
       })}
     </div>
   );
 };
 
-function useInterval(callback: () => void, delay: number) {
+function useInterval(callback: () => void, delay: number, numberOfTicks = 100) {
   const savedCallback = useRef<any>();
-
-  // Remember the latest callback.
+  const [ticks, setTicks] = useState(0);
   useEffect(() => {
     savedCallback.current = callback;
   }, [callback]);
@@ -54,13 +108,17 @@ function useInterval(callback: () => void, delay: number) {
   // Set up the interval.
   useEffect(() => {
     function tick() {
+      setTicks(ticks + 1);
       savedCallback.current();
     }
     if (delay !== null) {
       let id = setInterval(tick, delay);
+      if (ticks === numberOfTicks) {
+        clearInterval(id);
+      }
       return () => clearInterval(id);
     }
-  }, [delay]);
+  }, [delay, ticks]);
 }
 
 export default FunnyText;

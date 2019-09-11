@@ -1,5 +1,6 @@
-import React, { useRef, useEffect, useState } from 'react';
-import * as LivePhotosKit from 'livephotoskit';
+import React, { useRef, useEffect, useState } from "react";
+import * as LivePhotosKit from "livephotoskit";
+import style from "./LivePhoto.module.scss";
 
 interface IProps {
   imagePath: string;
@@ -41,19 +42,19 @@ const LivePhoto = ({
     }
   };
 
-  const divStyle = {
-    width: `${width}px`,
-    height: `100px`
-  };
+  // const divStyle = {
+  //   width: `${width}px`,
+  //   height: `100px`
+  // };
   return (
     <div
+      className={style.photo}
       onMouseEnter={playLoop}
       onMouseLeave={playStop}
       ref={textInput}
       data-live-photo
       data-photo-src={imagePath}
       data-video-src={videoPath}
-      style={divStyle}
     ></div>
   );
 };
