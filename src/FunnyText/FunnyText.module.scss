@@ -1,0 +1,45 @@
+.basic {
+  font-family: 'Courier New', Courier, monospace;
+  height: 100%;
+  width: 100%;
+}
+
+.hardChange {
+  font-size: 2em;
+}
+
+.smoothChange {
+  font-size: 1em;
+  animation-duration: 0.1s;
+  animation-name: changeFontSize;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes changeFontSize {
+  from {
+    font-size: 1em;
+  }
+
+  to {
+    font-size: 2em;
+  }
+}
+
+.waveChange {
+  font-size: 20vh;
+  animation-duration: 0.1s;
+  animation-name: changeHeightSize;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes changeHeightSize {
+  from {
+    font-size: 20vh;
+  }
+
+  to {
+    font-size: 40vh;
+  }
+}
