@@ -13,34 +13,34 @@ body {
 
 .App-header {
   background-color: #eab543;
-  min-height: 5vh;
+  min-height: 50vh;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-self: center;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.container {
-  height: 400px;
+.photo-container {
+  margin-top: 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-around;
   width: 100%;
 }
 
 .cool {
-  cursor: url('./images/modda2.png'), auto;
+  cursor: url("./images/modda2.png"), auto;
   background-color: #27ae60;
   width: 100%;
 }
 
 .lame {
-  cursor: url('./images/modda.png'), auto;
+  cursor: url("./images/modda.png"), auto;
   background-color: #d35400;
   width: 100%;
 }
