@@ -1,0 +1,18 @@
+.container {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.good {
+  cursor: url("../../images/modda2.png"), auto;
+  background-color: #74b9ff;
+  width: 100%;
+}
+
+.bad {
+  cursor: url("../../images/modda.png"), auto;
+  background-color: #81ecec;
+  width: 100%;
+}

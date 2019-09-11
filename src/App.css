@@ -1,6 +1,3 @@
-body {
-}
-
 .App {
   text-align: center;
 }
@@ -12,37 +9,16 @@ body {
 }
 
 .App-header {
-  background-color: #eab543;
   min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-.container {
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.cool {
-  cursor: url('./images/modda2.png'), auto;
-  background-color: #27ae60;
-  width: 100%;
-}
-
-.lame {
-  cursor: url('./images/modda.png'), auto;
-  background-color: #d35400;
-  width: 100%;
 }
 
 @keyframes App-logo-spin {
