@@ -24,7 +24,7 @@ const FunnyText = ({ text }: IProps) => {
   const textArray = text.split("").map(toText);
 
   const [symbols, setSymbols] = useState(textArray);
-  const [currentIndex, setCurrentIndex] = useState<number>(100);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   useInterval(
     function() {
@@ -90,7 +90,7 @@ const FunnyText = ({ text }: IProps) => {
             style={divStyle}
             className={classNames(currentStyle)}
           >
-            {symbol.symbol}
+            {index < currentIndex ? symbol.symbol : ""}
           </div>
         );
       })}
