@@ -25,36 +25,11 @@ const App: React.FC = () => {
         <FunnyText text={"Altsa Ogsa"} />
       </header>
       <div className="photo-container">
-        <LivePhoto
-          imagePath={stillImage}
-          videoPath={videos}
-          width={800}
-          height={800}
-        />
-        <LivePhoto
-          imagePath={linnBilde}
-          videoPath={linnVideo}
-          width={800}
-          height={800}
-        />
-        <LivePhoto
-          imagePath={jonasBilde}
-          videoPath={jonasVideo}
-          width={800}
-          height={800}
-        />
-        <LivePhoto
-          imagePath={mortenBilde}
-          videoPath={mortenVideo}
-          width={800}
-          height={800}
-        />
-        <LivePhoto
-          imagePath={strandBilde}
-          videoPath={strandVideo}
-          width={800}
-          height={800}
-        />
+        <LivePhoto imagePath={jonasBilde} videoPath={jonasVideo} />
+        <LivePhoto imagePath={stillImage} videoPath={videos} />
+        <LivePhoto imagePath={linnBilde} videoPath={linnVideo} />
+        <LivePhoto imagePath={mortenBilde} videoPath={mortenVideo} />
+        <LivePhoto imagePath={strandBilde} videoPath={strandVideo} />
       </div>
 
       {/* <div className='container'>

@@ -42,10 +42,6 @@ const LivePhoto = ({
     }
   };
 
-  // const divStyle = {
-  //   width: `${width}px`,
-  //   height: `100px`
-  // };
   return (
     <div
       className={style.photo}
@@ -55,7 +51,7 @@ const LivePhoto = ({
       data-live-photo
       data-photo-src={imagePath}
       data-video-src={videoPath}
-    ></div>
+    />
   );
 };
 

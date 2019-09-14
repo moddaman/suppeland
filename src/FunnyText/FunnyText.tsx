@@ -72,7 +72,6 @@ const FunnyText = ({ text }: IProps) => {
 
     setSymbols(newSymbols);
   };
-  console.log(symbols);
   return (
     <div className={style.basic} onMouseOut={defaultText}>
       {symbols.map((symbol, index) => {
