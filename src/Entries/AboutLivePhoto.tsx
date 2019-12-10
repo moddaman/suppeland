@@ -26,7 +26,7 @@ export const AboutLivePhoto = () => {
           A React component to show live photos <br />
           Hover over the image to "play" photo
         </p>
-        <p className={style.gridrow}>
+        <section className={style.gridrow}>
           <div>
             <LivePhoto imagePath={jonasBilde} videoPath={jonasVideo} />
           </div>
@@ -36,12 +36,11 @@ export const AboutLivePhoto = () => {
           <div>
             <LivePhoto imagePath={linnBilde} videoPath={linnVideo} />
           </div>
-        </p>
+        </section>
         <p>
           Apple has a LivePhotosKit JS, but i found it a little bit chunky to
-          use. So i made a react wrapper over it.
+          use. So i made a react wrapper over it. Here is how you would use it:
         </p>
-        <p>Here is how you would use it:</p>
         <SyntaxHighlighter language="javascript" style={tomorrow}>
           {usageString}
         </SyntaxHighlighter>

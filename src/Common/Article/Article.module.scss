@@ -1,8 +1,12 @@
 .basic {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   // grid-template-rows: repeat(auto-fill, 350px);
   // grid-template-columns: repeat(auto-fill, 250px);
   grid-row-gap: 25px;
   margin: 20px 0px;
+
+  p {
+    text-align: center;
+  }
 }
