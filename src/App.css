@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color: #ced6e0;
+  color: #2f3542;
+  min-height: 2000px;
 }
 
 .App-logo {
@@ -25,15 +28,15 @@
 .photo-container {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(auto-fill, 350px);
   grid-row-gap: 25px;
   /* flex-direction: column;
-  justify-content: space-around; */
-  /* width: 100%; */
+  justify-content: space-around;
+  width: 100%; */
 }
 
-.cool {
+/* .cool {
   cursor: url("./images/modda2.png"), auto;
   background-color: #27ae60;
   width: 100%;
@@ -43,7 +46,7 @@
   cursor: url("./images/modda.png"), auto;
   background-color: #d35400;
   width: 100%;
-}
+} */
 
 @keyframes App-logo-spin {
   from {

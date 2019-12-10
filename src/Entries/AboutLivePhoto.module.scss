@@ -1,0 +1,7 @@
+.gridrow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, 200px);
+  grid-column-gap: 10px;
+  margin: 20px 0px;
+}
