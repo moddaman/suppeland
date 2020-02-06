@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/suppeland/static/css/main.bb9cf4ad.chunk.css",
-    "main.js": "/suppeland/static/js/main.33a1f6c1.chunk.js",
-    "main.js.map": "/suppeland/static/js/main.33a1f6c1.chunk.js.map",
-    "runtime~main.js": "/suppeland/static/js/runtime~main.67d25033.js",
-    "runtime~main.js.map": "/suppeland/static/js/runtime~main.67d25033.js.map",
-    "static/js/2.3d3ca608.chunk.js": "/suppeland/static/js/2.3d3ca608.chunk.js",
-    "static/js/2.3d3ca608.chunk.js.map": "/suppeland/static/js/2.3d3ca608.chunk.js.map",
-    "index.html": "/suppeland/index.html",
-    "precache-manifest.3683239792b0df80b742af70e0c3d6b7.js": "/suppeland/precache-manifest.3683239792b0df80b742af70e0c3d6b7.js",
-    "service-worker.js": "/suppeland/service-worker.js",
-    "static/css/main.bb9cf4ad.chunk.css.map": "/suppeland/static/css/main.bb9cf4ad.chunk.css.map",
-    "static/media/IMG_0682.jpg": "/suppeland/static/media/IMG_0682.c270b3d0.jpg",
-    "static/media/IMG_0682.mp4": "/suppeland/static/media/IMG_0682.e4955027.mp4",
-    "static/media/jonas.mp4": "/suppeland/static/media/jonas.a273a7a0.mp4",
-    "static/media/jonas.jpg": "/suppeland/static/media/jonas.c24a7cf7.jpg",
-    "static/media/linn.mp4": "/suppeland/static/media/linn.5b6f4ba3.mp4",
-    "static/media/linn.jpg": "/suppeland/static/media/linn.e2679972.jpg"
+    "main.css": "./static/css/main.bb9cf4ad.chunk.css",
+    "main.js": "./static/js/main.0db850ab.chunk.js",
+    "main.js.map": "./static/js/main.0db850ab.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.8bccf55a.js",
+    "runtime~main.js.map": "./static/js/runtime~main.8bccf55a.js.map",
+    "static/js/2.3d3ca608.chunk.js": "./static/js/2.3d3ca608.chunk.js",
+    "static/js/2.3d3ca608.chunk.js.map": "./static/js/2.3d3ca608.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.c7b1ab4087a67d4f40d543c6b65847f9.js": "./precache-manifest.c7b1ab4087a67d4f40d543c6b65847f9.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.bb9cf4ad.chunk.css.map": "./static/css/main.bb9cf4ad.chunk.css.map",
+    "static/media/IMG_0682.jpg": "./static/media/IMG_0682.c270b3d0.jpg",
+    "static/media/IMG_0682.mp4": "./static/media/IMG_0682.e4955027.mp4",
+    "static/media/jonas.mp4": "./static/media/jonas.a273a7a0.mp4",
+    "static/media/jonas.jpg": "./static/media/jonas.c24a7cf7.jpg",
+    "static/media/linn.mp4": "./static/media/linn.5b6f4ba3.mp4",
+    "static/media/linn.jpg": "./static/media/linn.e2679972.jpg"
   }
 }
