@@ -1,7 +1,7 @@
 {
   "name": "suppee",
   "version": "0.1.0",
-  "homepage": "https://moddaman.github.io/suppeland",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@types/classnames": "^2.2.9",

@@ -4,11 +4,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm deploy`
+deploy app
+
+run
+
+    npm run build
+    npm mv build docs
+    git push
 
 Deploys the application to http://moddaman.github.io/suppeland
 
-### `npm start`
+Start app
+
+`npm start`
 
     Runs the app in the development mode.<br>
 
