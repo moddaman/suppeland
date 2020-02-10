@@ -52254,7 +52254,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var AboutLivePhoto = function AboutLivePhoto() {
+var AboutLive = function AboutLive() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       showImplementation = _useState[0],
       setShowImplementation = _useState[1];
@@ -52273,7 +52273,7 @@ var AboutLivePhoto = function AboutLivePhoto() {
       lineNumber: 18
     },
     __self: this
-  }, "Live Photo"), __jsx("p", {
+  }, "Live Photo"), "\u2211", __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
@@ -52340,7 +52340,7 @@ var AboutLivePhoto = function AboutLivePhoto() {
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (AboutLivePhoto);
+/* harmony default export */ __webpack_exports__["default"] = (AboutLive);
 var usageString = "<LivePhoto imagePath={\"./images/horse.jpg\"} videoPath={\"./images/horse.mp4\"} />\n";
 var codeString = "import React, { useRef, useEffect, useState } from \"react\";\nimport * as LivePhotosKit from \"livephotoskit\";\nimport style from \"./LivePhoto.module.scss\";\nimport { PlaybackStyleLiteral } from \"livephotoskit\";\n\ninterface IProps {\n  imagePath: string;\n  videoPath: string;\n  playbackStyle?: PlaybackStyleLiteral;\n}\n\nconst LivePhoto = ({\n  imagePath,\n  videoPath,\n  playbackStyle = LivePhotosKit.PlaybackStyle.LOOP\n}: IProps) => {\n  const textInput = useRef<HTMLInputElement>(null);\n  const [player, setPlayer] = useState<LivePhotosKit.Player>();\n\n  useEffect(() => {\n    if (textInput && textInput.current) {\n      const htmlPlayer = LivePhotosKit.Player(textInput.current);\n      setPlayer(htmlPlayer);\n      if (player) {\n        player.showsNativeControls = false;\n        player.playbackStyle = playbackStyle;\n      }\n    }\n  });\n\n  const playLoop = () => {\n    if (player) {\n      player.play();\n    }\n  };\n\n  const playStop = () => {\n    if (player) {\n      player.pause();\n    }\n  };\n\n  return (\n    <div\n      className={style.photo}\n      onMouseEnter={playLoop}\n      onTouchStart={playLoop}\n      onTouchEnd={playStop}\n      onMouseLeave={playStop}\n      ref={textInput}\n      data-live-photo\n      data-photo-src={imagePath}\n      data-video-src={videoPath}\n    />\n  );\n};\n\nexport default LivePhoto;\n";
 
@@ -52462,7 +52462,8 @@ var toText = function toText(symbol) {
 
 var FunnyText = function FunnyText(_ref) {
   var text = _ref.text;
-  var textArray = text.split("").map(toText);
+  var title = "S u p p e l a n d";
+  var textArray = title.split(" ").map(toText);
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_7__["useState"])(textArray),
       symbols = _useState[0],
@@ -52516,7 +52517,7 @@ var FunnyText = function FunnyText(_ref) {
     onMouseOut: defaultText,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 77
     },
     __self: this
   }, symbols.map(function (symbol, index) {
@@ -52535,7 +52536,7 @@ var FunnyText = function FunnyText(_ref) {
       className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(currentStyle),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86
+        lineNumber: 87
       },
       __self: this
     }, index < currentIndex ? symbol.symbol : "");

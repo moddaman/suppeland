@@ -122,7 +122,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const AboutLivePhoto = () => {
+const AboutLive = () => {
   const {
     0: showImplementation,
     1: setShowImplementation
@@ -142,7 +142,7 @@ const AboutLivePhoto = () => {
       lineNumber: 18
     },
     __self: undefined
-  }, "Live Photo"), __jsx("p", {
+  }, "Live Photo"), "\u2211", __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
@@ -207,7 +207,7 @@ const AboutLivePhoto = () => {
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (AboutLivePhoto);
+/* harmony default export */ __webpack_exports__["default"] = (AboutLive);
 const usageString = `<LivePhoto imagePath={"./images/horse.jpg"} videoPath={"./images/horse.mp4"} />
 `;
 const codeString = `import React, { useRef, useEffect, useState } from "react";
@@ -334,7 +334,8 @@ const toText = symbol => {
 const FunnyText = ({
   text
 }) => {
-  const textArray = text.split("").map(toText);
+  const title = "S u p p e l a n d";
+  const textArray = title.split(" ").map(toText);
   const {
     0: symbols,
     1: setSymbols
@@ -387,7 +388,7 @@ const FunnyText = ({
     onMouseOut: defaultText,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 77
     },
     __self: undefined
   }, symbols.map((symbol, index) => {
@@ -405,7 +406,7 @@ const FunnyText = ({
       className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(currentStyle),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86
+        lineNumber: 87
       },
       __self: undefined
     }, index < currentIndex ? symbol.symbol : "");
