@@ -10,30 +10,23 @@ import style from "./aboutLivePhoto.module.css";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { tomorrow } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
-const AboutLivePhoto = () => {
+const AboutLive = () => {
   const [showImplementation, setShowImplementation] = useState(false);
   const copyText = () => {};
   return (
     <section>
-      <h3>Live Photo</h3>
+      <h3>Live Photo</h3>∑
       <p>
         A React component to show live photos <br />
         Hover over the image to "play" photo
       </p>
-      <section className={style.gridrow}>
-        <div>
-          <LivePhoto
-            imagePath={"images/jonas.jpg"}
-            videoPath={"images/jonas.mp4"}
-          />
-        </div>
-        {/* <div>
-          <LivePhoto imagePath={stillImage} videoPath={videos} />
-        </div>
-        <div>
-          <LivePhoto imagePath={linnBilde} videoPath={linnVideo} />
-        </div> */}
-      </section>
+      <div>
+        <LivePhoto
+          interaction={"CLICK"}
+          imagePath={"images/jonas.jpg"}
+          videoPath={"images/jonas.mp4"}
+        />
+      </div>
       <p>
         Apple has a LivePhotosKit JS, but i found it a little bit chunky to use.
         So i made a react wrapper over it. Here is how you would use it:
@@ -54,7 +47,7 @@ const AboutLivePhoto = () => {
   );
 };
 
-export default AboutLivePhoto;
+export default AboutLive;
 
 const usageString = `<LivePhoto imagePath={"./images/horse.jpg"} videoPath={"./images/horse.mp4"} />
 `;

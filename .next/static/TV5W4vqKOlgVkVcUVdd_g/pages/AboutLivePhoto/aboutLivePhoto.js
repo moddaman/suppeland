@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{Qetd:function(o,t,n){"use strict";var e=Object.assign.bind(Object);o.exports=e,o.exports.default=o.exports},boIg:function(o,t,n){(window.__NEXT_P=window.__NEXT_P||[]).push(["/AboutLivePhoto/aboutLivePhoto",function(){return n("baq/")}])}},[["boIg",0,1,4]]]);

@@ -21,7 +21,7 @@ const toText = (symbol: string): IText => {
 };
 
 const FunnyText = ({ text }: IProps) => {
-  const textArray = text.split("").map(toText);
+  const textArray = ["R", "A"].map(toText);
 
   const [symbols, setSymbols] = useState(textArray);
   const [currentIndex, setCurrentIndex] = useState<number>(0);

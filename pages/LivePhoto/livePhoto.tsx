@@ -1,61 +1,49 @@
-import React, { useRef, useEffect, useState } from "react";
-import LivePhotosKit from "livephotoskit";
+import React, { useRef, useEffect } from "react";
 import style from "./livePhoto.module.css";
-import { PlaybackStyleLiteral } from "livephotoskit";
+
+type Interaction = "CLICK" | "HOVER";
 
 interface IProps {
   imagePath: string;
   videoPath: string;
-  playbackStyle?: PlaybackStyleLiteral;
+  interaction: Interaction;
 }
 
-const LivePhoto = ({
-  imagePath,
-  videoPath,
-  playbackStyle = LivePhotosKit.PlaybackStyle.LOOP
-}: IProps) => {
-  const textInput = useRef<HTMLInputElement>(null);
-  // const [player, setPlayer] = useState<LivePhotosKit.Player>();
+const LivePhoto = ({ videoPath, interaction }: IProps) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
 
-  // useEffect(() => {
-  //   if (textInput && textInput.current && typeof window !== "undefined") {
-  //     const htmlPlayer = LivePhotosKit.Player(textInput.current);
-  //     setPlayer(htmlPlayer);
-  //     if (player) {
-  //       player.showsNativeControls = false;
-  //       player.playbackStyle = playbackStyle;
-  //     }
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.preload = "1";
+    }
+  }, [videoRef.current]);
 
-  // const playLoop = () => {
-  //   if (player) {
-  //     player.play();
-  //   }
-  // };
+  const toggle = () => {
+    if (videoRef.current) {
+      videoRef.current.paused
+        ? videoRef.current.play()
+        : videoRef.current.pause();
+    }
+  };
 
-  // const playStop = () => {
-  //   if (player) {
-  //     player.pause();
-  //   }
-  // };
-  if (window) {
-    return (
-      <div>weird</div>
-      // <div
-      //   className={style.photo}
-      //   onMouseEnter={playLoop}
-      //   onTouchStart={playLoop}
-      //   onTouchEnd={playStop}
-      //   onMouseLeave={playStop}
-      //   ref={textInput}
-      //   data-live-photo
-      //   data-photo-src={imagePath}
-      //   data-video-src={videoPath}
-      // />
-    );
-  }
-  return <div>Loading</div>;
+  return (
+    <video
+      className={style.video}
+      loop
+      preload="none"
+      ref={videoRef}
+      onMouseEnter={interaction === "HOVER" ? toggle : () => console.log("hei")}
+      onMouseLeave={interaction === "HOVER" ? toggle : () => console.log("hei")}
+      onClick={interaction === "CLICK" ? toggle : () => console.log("hei")}
+    >
+      <source src={videoPath} type="video/mp4"></source>
+      {/* <source src={videoPath} type="video/mp4" /> */}
+      <source
+        src="https://giant.gfycat.com/VerifiableTerrificHind.webm"
+        type="video/webm"
+      />
+    </video>
+  );
 };
 
 export default LivePhoto;

@@ -1,5 +1,5 @@
 import FunnyText from "./FunnyText/funnyText";
-import AboutLivePhoto from "./AboutLivePhoto/AboutLivePhoto";
+import AboutLive from "./AboutLivePhoto/aboutLivePhoto";
 
 const Home = () => {
   return (
@@ -7,7 +7,7 @@ const Home = () => {
       <header className="App-header">
         <FunnyText text={"RANGO"} />
       </header>
-      <AboutLivePhoto />
+      <AboutLive />
     </div>
   );
 };

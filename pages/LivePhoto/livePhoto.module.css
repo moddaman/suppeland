@@ -1,7 +1,9 @@
-.photo {
-  min-height: 200px;
+.video {
+  height: 320px;
+  width: auto;
 }
 
-.cont {
-  margin-bottom: 20px;
-}
+/* Hide Play button + controls on iOS */
+/* video::-webkit-media-controls {
+  display: none !important;
+} */
