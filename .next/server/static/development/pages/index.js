@@ -93,6 +93,21 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./pages/AboutLivePhoto/aboutLivePhoto.module.css":
+/*!********************************************************!*\
+  !*** ./pages/AboutLivePhoto/aboutLivePhoto.module.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"gridrow": "aboutLivePhoto_gridrow__10prl",
+	"super": "aboutLivePhoto_super__zqCef"
+};
+
+/***/ }),
+
 /***/ "./pages/AboutLivePhoto/aboutLivePhoto.tsx":
 /*!*************************************************!*\
   !*** ./pages/AboutLivePhoto/aboutLivePhoto.tsx ***!
@@ -105,19 +120,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../LivePhoto/livePhoto */ "./pages/LivePhoto/livePhoto.tsx");
-/* harmony import */ var react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-syntax-highlighter */ "react-syntax-highlighter");
-/* harmony import */ var react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-syntax-highlighter/dist/cjs/styles/prism */ "react-syntax-highlighter/dist/cjs/styles/prism");
-/* harmony import */ var react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _aboutLivePhoto_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./aboutLivePhoto.module.css */ "./pages/AboutLivePhoto/aboutLivePhoto.module.css");
+/* harmony import */ var _aboutLivePhoto_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_aboutLivePhoto_module_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-syntax-highlighter */ "react-syntax-highlighter");
+/* harmony import */ var react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-syntax-highlighter/dist/cjs/styles/prism */ "react-syntax-highlighter/dist/cjs/styles/prism");
+/* harmony import */ var react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/mortenovrebo/Prosjekt/suppeland/pages/AboutLivePhoto/aboutLivePhoto.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
- // import stillImage from "./images/IMG_0682.jpg";
-// import videos from "./images/IMG_0682.mp4";
-// import linnBilde from "./images/linn.jpg";
-// import linnVideo from "./images/linn.mp4";
-// import jonasBilde from "./images/jonas.jpg";
-// import jonasVideo from "./images/jonas.mp4";
+
 
 
 
@@ -133,137 +145,155 @@ const AboutLive = () => {
   return __jsx("section", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 11
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, "Live Photo"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, "En React komponent for \xE5 vise \"live photos\" ", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  })), __jsx("div", {
+    className: _aboutLivePhoto_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.super,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }, __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: undefined
-  }, "Live Photo"), "\u2211", __jsx("p", {
+  }, "click to play and pause"), __jsx(_LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    interaction: "CLICK",
+    videoPath: "images/jonas.mp4",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: undefined
-  }, "A React component to show live photos ", __jsx("br", {
+  })), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: undefined
-  }), "Hover over the image to \"play\" photo"), __jsx("div", {
+  }, __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: undefined
+  }, "hover to play"), __jsx(_LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    interaction: "HOVER",
+    videoPath: "images/linn.mp4",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: undefined
-  }, __jsx(_LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    interaction: "CLICK",
-    imagePath: "images/jonas.jpg",
-    videoPath: "images/jonas.mp4",
+  }))), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: undefined
-  })), __jsx("p", {
+  }, "Pr\xF8vde f\xF8rst Apple sitt LivePhotosKit JS for \xE5 vise \"live photos\", men fant ut at det var mye lettere \xE5 bare bruke HTML Video."), __jsx(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_3__["Prism"], {
+    language: "javascript",
+    style: react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4__["tomorrow"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
-    },
-    __self: undefined
-  }, "Apple has a LivePhotosKit JS, but i found it a little bit chunky to use. So i made a react wrapper over it. Here is how you would use it:"), __jsx(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_2__["Prism"], {
-    language: "javascript",
-    style: react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_3__["tomorrow"],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
     },
     __self: undefined
   }, usageString), __jsx("button", {
     onClick: () => setShowImplementation(!showImplementation),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 33
     },
     __self: undefined
-  }, showImplementation ? "hide implementation" : "Show implementation"), showImplementation && __jsx(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_2__["Prism"], {
+  }, showImplementation ? "hide implementation" : "Show implementation"), showImplementation && __jsx(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_3__["Prism"], {
     language: "javascript",
-    style: react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_3__["tomorrow"],
+    style: react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4__["tomorrow"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 37
     },
     __self: undefined
   }, codeString), __jsx("code", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 41
     },
     __self: undefined
   }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AboutLive);
-const usageString = `<LivePhoto imagePath={"./images/horse.jpg"} videoPath={"./images/horse.mp4"} />
+const usageString = `<LivePhoto interaction={"CLICK"} videoPath={"<Video url>"} />
 `;
-const codeString = `import React, { useRef, useEffect, useState } from "react";
-import * as LivePhotosKit from "livephotoskit";
-import style from "./LivePhoto.module.scss";
-import { PlaybackStyleLiteral } from "livephotoskit";
+const codeString = `import React, { useRef, useEffect } from "react";
+import style from "./livePhoto.module.css";
+
+type Interaction = "CLICK" | "HOVER";
 
 interface IProps {
-  imagePath: string;
   videoPath: string;
-  playbackStyle?: PlaybackStyleLiteral;
+  interaction: Interaction;
 }
 
-const LivePhoto = ({
-  imagePath,
-  videoPath,
-  playbackStyle = LivePhotosKit.PlaybackStyle.LOOP
-}: IProps) => {
-  const textInput = useRef<HTMLInputElement>(null);
-  const [player, setPlayer] = useState<LivePhotosKit.Player>();
+const LivePhoto = ({ videoPath, interaction }: IProps) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (textInput && textInput.current) {
-      const htmlPlayer = LivePhotosKit.Player(textInput.current);
-      setPlayer(htmlPlayer);
-      if (player) {
-        player.showsNativeControls = false;
-        player.playbackStyle = playbackStyle;
-      }
+    if (videoRef.current) {
+      videoRef.current.preload = "1";
+      videoRef.current.volume = 0;
     }
-  });
+  }, [videoRef.current]);
 
-  const playLoop = () => {
-    if (player) {
-      player.play();
-    }
-  };
-
-  const playStop = () => {
-    if (player) {
-      player.pause();
+  const toggle = () => {
+    if (videoRef.current) {
+      videoRef.current.paused
+        ? videoRef.current.play()
+        : videoRef.current.pause();
     }
   };
 
   return (
-    <div
-      className={style.photo}
-      onMouseEnter={playLoop}
-      onTouchStart={playLoop}
-      onTouchEnd={playStop}
-      onMouseLeave={playStop}
-      ref={textInput}
-      data-live-photo
-      data-photo-src={imagePath}
-      data-video-src={videoPath}
-    />
+    <video
+      className={style.video}
+      loop
+      preload="none"
+      ref={videoRef}
+      onMouseEnter={interaction === "HOVER" ? toggle : () => console.log("X")}
+      onMouseLeave={interaction === "HOVER" ? toggle : () => console.log("X")}
+      onClick={interaction === "CLICK" ? toggle : () => console.log("X")}
+    >
+      <source src={videoPath} type="video/mp4"></source>
+    </video>
   );
 };
 
@@ -485,39 +515,34 @@ const LivePhoto = ({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     if (videoRef.current) {
       videoRef.current.preload = "1";
+      videoRef.current.volume = 0;
     }
   }, [videoRef.current]);
 
-  const toggle = () => {
-    if (videoRef.current) {
+  const toggle = currentInteraction => {
+    if (videoRef.current && currentInteraction === interaction) {
       videoRef.current.paused ? videoRef.current.play() : videoRef.current.pause();
     }
   };
+
+  const play = () => {};
 
   return __jsx("video", {
     className: _livePhoto_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.video,
     loop: true,
     preload: "none",
     ref: videoRef,
-    onMouseEnter: interaction === "HOVER" ? toggle : () => console.log("hei"),
-    onMouseLeave: interaction === "HOVER" ? toggle : () => console.log("hei"),
-    onClick: interaction === "CLICK" ? toggle : () => console.log("hei"),
+    onMouseEnter: () => toggle("HOVER"),
+    onMouseLeave: () => toggle("HOVER"),
+    onClick: () => toggle("CLICK"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 32
     },
     __self: undefined
   }, __jsx("source", {
     src: videoPath,
     type: "video/mp4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: undefined
-  }), __jsx("source", {
-    src: "https://giant.gfycat.com/VerifiableTerrificHind.webm",
-    type: "video/webm",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
@@ -527,6 +552,21 @@ const LivePhoto = ({
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LivePhoto);
+
+/***/ }),
+
+/***/ "./pages/index.module.css":
+/*!********************************!*\
+  !*** ./pages/index.module.css ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"app": "index_app__dX5MZ",
+	"container": "index_container__3XRMM"
+};
 
 /***/ }),
 
@@ -543,41 +583,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _FunnyText_funnyText__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FunnyText/funnyText */ "./pages/FunnyText/funnyText.tsx");
 /* harmony import */ var _AboutLivePhoto_aboutLivePhoto__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AboutLivePhoto/aboutLivePhoto */ "./pages/AboutLivePhoto/aboutLivePhoto.tsx");
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.module.css */ "./pages/index.module.css");
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_module_css__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/mortenovrebo/Prosjekt/suppeland/pages/index.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 const Home = () => {
   return __jsx("div", {
-    className: "App",
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.app,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.container,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
     },
     __self: undefined
   }, __jsx("header", {
     className: "App-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 9
     },
     __self: undefined
   }, __jsx(_FunnyText_funnyText__WEBPACK_IMPORTED_MODULE_1__["default"], {
     text: "RANGO",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: undefined
   })), __jsx(_AboutLivePhoto_aboutLivePhoto__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     },
     __self: undefined
-  }));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);

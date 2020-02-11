@@ -1,11 +1,5 @@
 import React, { useState } from "react";
 import LivePhoto from "../LivePhoto/livePhoto";
-// import stillImage from "./images/IMG_0682.jpg";
-// import videos from "./images/IMG_0682.mp4";
-// import linnBilde from "./images/linn.jpg";
-// import linnVideo from "./images/linn.mp4";
-// import jonasBilde from "./images/jonas.jpg";
-// import jonasVideo from "./images/jonas.mp4";
 import style from "./aboutLivePhoto.module.css";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { tomorrow } from "react-syntax-highlighter/dist/cjs/styles/prism";
@@ -15,21 +9,23 @@ const AboutLive = () => {
   const copyText = () => {};
   return (
     <section>
-      <h3>Live Photo</h3>∑
+      <h3>Live Photo</h3>
       <p>
-        A React component to show live photos <br />
-        Hover over the image to "play" photo
+        En React komponent for å vise "live photos" <br />
       </p>
-      <div>
-        <LivePhoto
-          interaction={"CLICK"}
-          imagePath={"images/jonas.jpg"}
-          videoPath={"images/jonas.mp4"}
-        />
+      <div className={style.super}>
+        <div>
+          <div>click to play and pause</div>
+          <LivePhoto interaction={"CLICK"} videoPath={"images/jonas.mp4"} />
+        </div>
+        <div>
+          <div>hover to play</div>
+          <LivePhoto interaction={"HOVER"} videoPath={"images/linn.mp4"} />
+        </div>
       </div>
       <p>
-        Apple has a LivePhotosKit JS, but i found it a little bit chunky to use.
-        So i made a react wrapper over it. Here is how you would use it:
+        Prøvde først Apple sitt LivePhotosKit JS for å vise "live photos", men
+        fant ut at det var mye lettere å bare bruke HTML Video.
       </p>
       <SyntaxHighlighter language="javascript" style={tomorrow}>
         {usageString}
@@ -49,63 +45,49 @@ const AboutLive = () => {
 
 export default AboutLive;
 
-const usageString = `<LivePhoto imagePath={"./images/horse.jpg"} videoPath={"./images/horse.mp4"} />
+const usageString = `<LivePhoto interaction={"CLICK"} videoPath={"<Video url>"} />
 `;
 
-const codeString = `import React, { useRef, useEffect, useState } from "react";
-import * as LivePhotosKit from "livephotoskit";
-import style from "./LivePhoto.module.scss";
-import { PlaybackStyleLiteral } from "livephotoskit";
+const codeString = `import React, { useRef, useEffect } from "react";
+import style from "./livePhoto.module.css";
+
+type Interaction = "CLICK" | "HOVER";
 
 interface IProps {
-  imagePath: string;
   videoPath: string;
-  playbackStyle?: PlaybackStyleLiteral;
+  interaction: Interaction;
 }
 
-const LivePhoto = ({
-  imagePath,
-  videoPath,
-  playbackStyle = LivePhotosKit.PlaybackStyle.LOOP
-}: IProps) => {
-  const textInput = useRef<HTMLInputElement>(null);
-  const [player, setPlayer] = useState<LivePhotosKit.Player>();
+const LivePhoto = ({ videoPath, interaction }: IProps) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (textInput && textInput.current) {
-      const htmlPlayer = LivePhotosKit.Player(textInput.current);
-      setPlayer(htmlPlayer);
-      if (player) {
-        player.showsNativeControls = false;
-        player.playbackStyle = playbackStyle;
-      }
+    if (videoRef.current) {
+      videoRef.current.preload = "1";
+      videoRef.current.volume = 0;
     }
-  });
+  }, [videoRef.current]);
 
-  const playLoop = () => {
-    if (player) {
-      player.play();
-    }
-  };
-
-  const playStop = () => {
-    if (player) {
-      player.pause();
+  const toggle = () => {
+    if (videoRef.current) {
+      videoRef.current.paused
+        ? videoRef.current.play()
+        : videoRef.current.pause();
     }
   };
 
   return (
-    <div
-      className={style.photo}
-      onMouseEnter={playLoop}
-      onTouchStart={playLoop}
-      onTouchEnd={playStop}
-      onMouseLeave={playStop}
-      ref={textInput}
-      data-live-photo
-      data-photo-src={imagePath}
-      data-video-src={videoPath}
-    />
+    <video
+      className={style.video}
+      loop
+      preload="none"
+      ref={videoRef}
+      onMouseEnter={interaction === "HOVER" ? toggle : () => console.log("X")}
+      onMouseLeave={interaction === "HOVER" ? toggle : () => console.log("X")}
+      onClick={interaction === "CLICK" ? toggle : () => console.log("X")}
+    >
+      <source src={videoPath} type="video/mp4"></source>
+    </video>
   );
 };
 

@@ -4,7 +4,6 @@ import style from "./livePhoto.module.css";
 type Interaction = "CLICK" | "HOVER";
 
 interface IProps {
-  imagePath: string;
   videoPath: string;
   interaction: Interaction;
 }
@@ -15,16 +14,19 @@ const LivePhoto = ({ videoPath, interaction }: IProps) => {
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.preload = "1";
+      videoRef.current.volume = 0;
     }
   }, [videoRef.current]);
 
-  const toggle = () => {
-    if (videoRef.current) {
+  const toggle = (currentInteraction: Interaction) => {
+    if (videoRef.current && currentInteraction === interaction) {
       videoRef.current.paused
         ? videoRef.current.play()
         : videoRef.current.pause();
     }
   };
+
+  const play = () => {};
 
   return (
     <video
@@ -32,16 +34,11 @@ const LivePhoto = ({ videoPath, interaction }: IProps) => {
       loop
       preload="none"
       ref={videoRef}
-      onMouseEnter={interaction === "HOVER" ? toggle : () => console.log("hei")}
-      onMouseLeave={interaction === "HOVER" ? toggle : () => console.log("hei")}
-      onClick={interaction === "CLICK" ? toggle : () => console.log("hei")}
+      onMouseEnter={() => toggle("HOVER")}
+      onMouseLeave={() => toggle("HOVER")}
+      onClick={() => toggle("CLICK")}
     >
       <source src={videoPath} type="video/mp4"></source>
-      {/* <source src={videoPath} type="video/mp4" /> */}
-      <source
-        src="https://giant.gfycat.com/VerifiableTerrificHind.webm"
-        type="video/webm"
-      />
     </video>
   );
 };

@@ -5,3 +5,8 @@
   grid-column-gap: 10px;
   margin: 20px 0px;
 }
+
+.super {
+  display: flex;
+  flex-direction: row;
+}

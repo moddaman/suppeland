@@ -2173,6 +2173,24 @@ $export($export.S, 'Object', {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./pages/AboutLivePhoto/aboutLivePhoto.module.css":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/postcss-loader/src??__nextjs_postcss!./pages/AboutLivePhoto/aboutLivePhoto.module.css ***!
+  \********************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".aboutLivePhoto_gridrow__10prl {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-template-rows: repeat(auto-fill, 200px);\n  grid-column-gap: 10px;\n  margin: 20px 0px;\n}\n\n.aboutLivePhoto_super__zqCef {\n  display: flex;\n  flex-direction: row;\n}\n", "",{"version":3,"sources":["aboutLivePhoto.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,kCAAkC;EAClC,4CAA4C;EAC5C,qBAAqB;EACrB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,mBAAmB;AACrB","file":"aboutLivePhoto.module.css","sourcesContent":[".gridrow {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-template-rows: repeat(auto-fill, 200px);\n  grid-column-gap: 10px;\n  margin: 20px 0px;\n}\n\n.super {\n  display: flex;\n  flex-direction: row;\n}\n"]}]);
+// Exports
+exports.locals = {
+	"gridrow": "aboutLivePhoto_gridrow__10prl",
+	"super": "aboutLivePhoto_super__zqCef"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./pages/FunnyText/funnyText.module.css":
 /*!**********************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/postcss-loader/src??__nextjs_postcss!./pages/FunnyText/funnyText.module.css ***!
@@ -2182,7 +2200,7 @@ $export($export.S, 'Object', {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, ".funnyText_basic__19K50 {\n  font-family: \"Courier New\", Courier, monospace;\n  height: 100%;\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n\n  /* > div {\n    width: 30px;\n    height: 50px;\n    text-align: center;\n    vertical-align: middle;\n    line-height: 90px;\n  } */\n}\n\n.funnyText_largeFont__1NrHh {\n  font-size: 10vh;\n}\n\n.funnyText_mediumFont__3LGtl {\n  font-size: 7vh;\n}\n\n.funnyText_smallFont__Z8wDA {\n  font-size: 7vh;\n}\n\n.funnyText_show__2m6bU {\n  visibility: visible;\n}\n.funnyText_hide__2Ivhc {\n  visibility: hidden;\n}\n\n.funnyText_hardChange__2KpiL {\n  font-size: 2em;\n}\n\n.funnyText_smoothChange__KALer {\n  font-size: 1em;\n  -webkit-animation-duration: 0.1s;\n          animation-duration: 0.1s;\n  -webkit-animation-name: funnyText_changeFontSize__hry4P;\n          animation-name: funnyText_changeFontSize__hry4P;\n  -webkit-animation-iteration-count: 1;\n          animation-iteration-count: 1;\n  -webkit-animation-direction: alternate;\n          animation-direction: alternate;\n}\n\n@-webkit-keyframes funnyText_changeFontSize__hry4P {\n  from {\n    font-size: 1em;\n  }\n\n  to {\n    font-size: 2em;\n  }\n}\n\n@keyframes funnyText_changeFontSize__hry4P {\n  from {\n    font-size: 1em;\n  }\n\n  to {\n    font-size: 2em;\n  }\n}\n\n.funnyText_waveChange__2QZgp {\n  font-size: 20vh;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n  -webkit-animation-name: funnyText_changeHeightSize__VJjLD;\n          animation-name: funnyText_changeHeightSize__VJjLD;\n  -webkit-animation-iteration-count: 1;\n          animation-iteration-count: 1;\n  -webkit-animation-direction: alternate;\n          animation-direction: alternate;\n}\n\n@-webkit-keyframes funnyText_changeHeightSize__VJjLD {\n  from {\n    font-size: 20vh;\n  }\n\n  to {\n    font-size: 40vh;\n  }\n}\n\n@keyframes funnyText_changeHeightSize__VJjLD {\n  from {\n    font-size: 20vh;\n  }\n\n  to {\n    font-size: 40vh;\n  }\n}\n", "",{"version":3,"sources":["funnyText.module.css"],"names":[],"mappings":"AAAA;EACE,8CAA8C;EAC9C,YAAY;EACZ,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,mBAAmB;;EAEnB;;;;;;KAMG;AACL;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,mBAAmB;AACrB;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,cAAc;EACd,gCAAwB;UAAxB,wBAAwB;EACxB,uDAA8B;UAA9B,+CAA8B;EAC9B,oCAA4B;UAA5B,4BAA4B;EAC5B,sCAA8B;UAA9B,8BAA8B;AAChC;;AAEA;EACE;IACE,cAAc;EAChB;;EAEA;IACE,cAAc;EAChB;AACF;;AARA;EACE;IACE,cAAc;EAChB;;EAEA;IACE,cAAc;EAChB;AACF;;AAEA;EACE,eAAe;EACf,8BAAsB;UAAtB,sBAAsB;EACtB,yDAAgC;UAAhC,iDAAgC;EAChC,oCAA4B;UAA5B,4BAA4B;EAC5B,sCAA8B;UAA9B,8BAA8B;AAChC;;AAEA;EACE;IACE,eAAe;EACjB;;EAEA;IACE,eAAe;EACjB;AACF;;AARA;EACE;IACE,eAAe;EACjB;;EAEA;IACE,eAAe;EACjB;AACF","file":"funnyText.module.css","sourcesContent":[".basic {\n  font-family: \"Courier New\", Courier, monospace;\n  height: 100%;\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n\n  /* > div {\n    width: 30px;\n    height: 50px;\n    text-align: center;\n    vertical-align: middle;\n    line-height: 90px;\n  } */\n}\n\n.largeFont {\n  font-size: 10vh;\n}\n\n.mediumFont {\n  font-size: 7vh;\n}\n\n.smallFont {\n  font-size: 7vh;\n}\n\n.show {\n  visibility: visible;\n}\n.hide {\n  visibility: hidden;\n}\n\n.hardChange {\n  font-size: 2em;\n}\n\n.smoothChange {\n  font-size: 1em;\n  animation-duration: 0.1s;\n  animation-name: changeFontSize;\n  animation-iteration-count: 1;\n  animation-direction: alternate;\n}\n\n@keyframes changeFontSize {\n  from {\n    font-size: 1em;\n  }\n\n  to {\n    font-size: 2em;\n  }\n}\n\n.waveChange {\n  font-size: 20vh;\n  animation-duration: 1s;\n  animation-name: changeHeightSize;\n  animation-iteration-count: 1;\n  animation-direction: alternate;\n}\n\n@keyframes changeHeightSize {\n  from {\n    font-size: 20vh;\n  }\n\n  to {\n    font-size: 40vh;\n  }\n}\n"]}]);
+exports.push([module.i, ".funnyText_basic__19K50 {\n  font-family: \"Courier New\", Courier, monospace;\n  height: 100px;\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n}\n\n.funnyText_largeFont__1NrHh {\n  font-size: 10vh;\n}\n\n.funnyText_mediumFont__3LGtl {\n  font-size: 7vh;\n}\n\n.funnyText_smallFont__Z8wDA {\n  font-size: 7vh;\n}\n\n.funnyText_show__2m6bU {\n  visibility: visible;\n}\n.funnyText_hide__2Ivhc {\n  visibility: hidden;\n}\n\n.funnyText_hardChange__2KpiL {\n  font-size: 2em;\n}\n\n.funnyText_smoothChange__KALer {\n  font-size: 1em;\n  -webkit-animation-duration: 0.1s;\n          animation-duration: 0.1s;\n  -webkit-animation-name: funnyText_changeFontSize__hry4P;\n          animation-name: funnyText_changeFontSize__hry4P;\n  -webkit-animation-iteration-count: 1;\n          animation-iteration-count: 1;\n  -webkit-animation-direction: alternate;\n          animation-direction: alternate;\n}\n\n@-webkit-keyframes funnyText_changeFontSize__hry4P {\n  from {\n    font-size: 1em;\n  }\n\n  to {\n    font-size: 2em;\n  }\n}\n\n@keyframes funnyText_changeFontSize__hry4P {\n  from {\n    font-size: 1em;\n  }\n\n  to {\n    font-size: 2em;\n  }\n}\n\n.funnyText_waveChange__2QZgp {\n  font-size: 20vh;\n  -webkit-animation-duration: 1s;\n          animation-duration: 1s;\n  -webkit-animation-name: funnyText_changeHeightSize__VJjLD;\n          animation-name: funnyText_changeHeightSize__VJjLD;\n  -webkit-animation-iteration-count: 1;\n          animation-iteration-count: 1;\n  -webkit-animation-direction: alternate;\n          animation-direction: alternate;\n}\n\n@-webkit-keyframes funnyText_changeHeightSize__VJjLD {\n  from {\n    font-size: 20vh;\n  }\n\n  to {\n    font-size: 40vh;\n  }\n}\n\n@keyframes funnyText_changeHeightSize__VJjLD {\n  from {\n    font-size: 20vh;\n  }\n\n  to {\n    font-size: 40vh;\n  }\n}\n", "",{"version":3,"sources":["funnyText.module.css"],"names":[],"mappings":"AAAA;EACE,8CAA8C;EAC9C,aAAa;EACb,WAAW;EACX,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,mBAAmB;AACrB;AACA;EACE,kBAAkB;AACpB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,cAAc;EACd,gCAAwB;UAAxB,wBAAwB;EACxB,uDAA8B;UAA9B,+CAA8B;EAC9B,oCAA4B;UAA5B,4BAA4B;EAC5B,sCAA8B;UAA9B,8BAA8B;AAChC;;AAEA;EACE;IACE,cAAc;EAChB;;EAEA;IACE,cAAc;EAChB;AACF;;AARA;EACE;IACE,cAAc;EAChB;;EAEA;IACE,cAAc;EAChB;AACF;;AAEA;EACE,eAAe;EACf,8BAAsB;UAAtB,sBAAsB;EACtB,yDAAgC;UAAhC,iDAAgC;EAChC,oCAA4B;UAA5B,4BAA4B;EAC5B,sCAA8B;UAA9B,8BAA8B;AAChC;;AAEA;EACE;IACE,eAAe;EACjB;;EAEA;IACE,eAAe;EACjB;AACF;;AARA;EACE;IACE,eAAe;EACjB;;EAEA;IACE,eAAe;EACjB;AACF","file":"funnyText.module.css","sourcesContent":[".basic {\n  font-family: \"Courier New\", Courier, monospace;\n  height: 100px;\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n}\n\n.largeFont {\n  font-size: 10vh;\n}\n\n.mediumFont {\n  font-size: 7vh;\n}\n\n.smallFont {\n  font-size: 7vh;\n}\n\n.show {\n  visibility: visible;\n}\n.hide {\n  visibility: hidden;\n}\n\n.hardChange {\n  font-size: 2em;\n}\n\n.smoothChange {\n  font-size: 1em;\n  animation-duration: 0.1s;\n  animation-name: changeFontSize;\n  animation-iteration-count: 1;\n  animation-direction: alternate;\n}\n\n@keyframes changeFontSize {\n  from {\n    font-size: 1em;\n  }\n\n  to {\n    font-size: 2em;\n  }\n}\n\n.waveChange {\n  font-size: 20vh;\n  animation-duration: 1s;\n  animation-name: changeHeightSize;\n  animation-iteration-count: 1;\n  animation-direction: alternate;\n}\n\n@keyframes changeHeightSize {\n  from {\n    font-size: 20vh;\n  }\n\n  to {\n    font-size: 40vh;\n  }\n}\n"]}]);
 // Exports
 exports.locals = {
 	"basic": "funnyText_basic__19K50",
@@ -2213,6 +2231,24 @@ exports.push([module.i, ".livePhoto_video__f8e1Y {\n  height: 320px;\n  width: a
 // Exports
 exports.locals = {
 	"video": "livePhoto_video__f8e1Y"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./pages/index.module.css":
+/*!********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/postcss-loader/src??__nextjs_postcss!./pages/index.module.css ***!
+  \********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".index_app__dX5MZ {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 200%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  background-color: #ecf0f1;\n  font-family: sans-serif;\n}\n\n.index_container__3XRMM {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  max-width: 600px;\n}\n", "",{"version":3,"sources":["index.module.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,WAAW;EACX,YAAY;EACZ,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,yBAAyB;EACzB,uBAAuB;AACzB;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,gBAAgB;AAClB","file":"index.module.css","sourcesContent":[".app {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 200%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  background-color: #ecf0f1;\n  font-family: sans-serif;\n}\n\n.container {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  max-width: 600px;\n}\n"]}]);
+// Exports
+exports.locals = {
+	"app": "index_app__dX5MZ",
+	"container": "index_container__3XRMM"
 };
 
 /***/ }),
@@ -52226,6 +52262,67 @@ function extend() {
 
 /***/ }),
 
+/***/ "./pages/AboutLivePhoto/aboutLivePhoto.module.css":
+/*!********************************************************!*\
+  !*** ./pages/AboutLivePhoto/aboutLivePhoto.module.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/postcss-loader/src??__nextjs_postcss!./aboutLivePhoto.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./pages/AboutLivePhoto/aboutLivePhoto.module.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/postcss-loader/src??__nextjs_postcss!./aboutLivePhoto.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./pages/AboutLivePhoto/aboutLivePhoto.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/postcss-loader/src??__nextjs_postcss!./aboutLivePhoto.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./pages/AboutLivePhoto/aboutLivePhoto.module.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
 /***/ "./pages/AboutLivePhoto/aboutLivePhoto.tsx":
 /*!*************************************************!*\
   !*** ./pages/AboutLivePhoto/aboutLivePhoto.tsx ***!
@@ -52238,18 +52335,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../LivePhoto/livePhoto */ "./pages/LivePhoto/livePhoto.tsx");
-/* harmony import */ var react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-syntax-highlighter */ "./node_modules/react-syntax-highlighter/dist/esm/index.js");
-/* harmony import */ var react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-syntax-highlighter/dist/cjs/styles/prism */ "./node_modules/react-syntax-highlighter/dist/cjs/styles/prism/index.js");
-/* harmony import */ var react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _aboutLivePhoto_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./aboutLivePhoto.module.css */ "./pages/AboutLivePhoto/aboutLivePhoto.module.css");
+/* harmony import */ var _aboutLivePhoto_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_aboutLivePhoto_module_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-syntax-highlighter */ "./node_modules/react-syntax-highlighter/dist/esm/index.js");
+/* harmony import */ var react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-syntax-highlighter/dist/cjs/styles/prism */ "./node_modules/react-syntax-highlighter/dist/cjs/styles/prism/index.js");
+/* harmony import */ var react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/mortenovrebo/Prosjekt/suppeland/pages/AboutLivePhoto/aboutLivePhoto.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
- // import stillImage from "./images/IMG_0682.jpg";
-// import videos from "./images/IMG_0682.mp4";
-// import linnBilde from "./images/linn.jpg";
-// import linnVideo from "./images/linn.mp4";
-// import jonasBilde from "./images/jonas.jpg";
-// import jonasVideo from "./images/jonas.mp4";
+
 
 
 
@@ -52264,54 +52358,86 @@ var AboutLive = function AboutLive() {
   return __jsx("section", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 11
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "Live Photo"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "En React komponent for \xE5 vise \"live photos\" ", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  })), __jsx("div", {
+    className: _aboutLivePhoto_module_css__WEBPACK_IMPORTED_MODULE_2___default.a["super"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
-  }, "Live Photo"), "\u2211", __jsx("p", {
+  }, "click to play and pause"), __jsx(_LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    interaction: "CLICK",
+    videoPath: "images/jonas.mp4",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }, "A React component to show live photos ", __jsx("br", {
+  })), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
-  }), "Hover over the image to \"play\" photo"), __jsx("div", {
+  }, __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "hover to play"), __jsx(_LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    interaction: "HOVER",
+    videoPath: "images/linn.mp4",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }, __jsx(_LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    interaction: "CLICK",
-    imagePath: "images/jonas.jpg",
-    videoPath: "images/jonas.mp4",
+  }))), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
-  })), __jsx("p", {
+  }, "Pr\xF8vde f\xF8rst Apple sitt LivePhotosKit JS for \xE5 vise \"live photos\", men fant ut at det var mye lettere \xE5 bare bruke HTML Video."), __jsx(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_3__["Prism"], {
+    language: "javascript",
+    style: react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4__["tomorrow"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
-    },
-    __self: this
-  }, "Apple has a LivePhotosKit JS, but i found it a little bit chunky to use. So i made a react wrapper over it. Here is how you would use it:"), __jsx(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_2__["Prism"], {
-    language: "javascript",
-    style: react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_3__["tomorrow"],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
     },
     __self: this
   }, usageString), __jsx("button", {
@@ -52320,29 +52446,29 @@ var AboutLive = function AboutLive() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 33
     },
     __self: this
-  }, showImplementation ? "hide implementation" : "Show implementation"), showImplementation && __jsx(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_2__["Prism"], {
+  }, showImplementation ? "hide implementation" : "Show implementation"), showImplementation && __jsx(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_3__["Prism"], {
     language: "javascript",
-    style: react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_3__["tomorrow"],
+    style: react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4__["tomorrow"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 37
     },
     __self: this
   }, codeString), __jsx("code", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 41
     },
     __self: this
   }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AboutLive);
-var usageString = "<LivePhoto imagePath={\"./images/horse.jpg\"} videoPath={\"./images/horse.mp4\"} />\n";
-var codeString = "import React, { useRef, useEffect, useState } from \"react\";\nimport * as LivePhotosKit from \"livephotoskit\";\nimport style from \"./LivePhoto.module.scss\";\nimport { PlaybackStyleLiteral } from \"livephotoskit\";\n\ninterface IProps {\n  imagePath: string;\n  videoPath: string;\n  playbackStyle?: PlaybackStyleLiteral;\n}\n\nconst LivePhoto = ({\n  imagePath,\n  videoPath,\n  playbackStyle = LivePhotosKit.PlaybackStyle.LOOP\n}: IProps) => {\n  const textInput = useRef<HTMLInputElement>(null);\n  const [player, setPlayer] = useState<LivePhotosKit.Player>();\n\n  useEffect(() => {\n    if (textInput && textInput.current) {\n      const htmlPlayer = LivePhotosKit.Player(textInput.current);\n      setPlayer(htmlPlayer);\n      if (player) {\n        player.showsNativeControls = false;\n        player.playbackStyle = playbackStyle;\n      }\n    }\n  });\n\n  const playLoop = () => {\n    if (player) {\n      player.play();\n    }\n  };\n\n  const playStop = () => {\n    if (player) {\n      player.pause();\n    }\n  };\n\n  return (\n    <div\n      className={style.photo}\n      onMouseEnter={playLoop}\n      onTouchStart={playLoop}\n      onTouchEnd={playStop}\n      onMouseLeave={playStop}\n      ref={textInput}\n      data-live-photo\n      data-photo-src={imagePath}\n      data-video-src={videoPath}\n    />\n  );\n};\n\nexport default LivePhoto;\n";
+var usageString = "<LivePhoto interaction={\"CLICK\"} videoPath={\"<Video url>\"} />\n";
+var codeString = "import React, { useRef, useEffect } from \"react\";\nimport style from \"./livePhoto.module.css\";\n\ntype Interaction = \"CLICK\" | \"HOVER\";\n\ninterface IProps {\n  videoPath: string;\n  interaction: Interaction;\n}\n\nconst LivePhoto = ({ videoPath, interaction }: IProps) => {\n  const videoRef = useRef<HTMLVideoElement>(null);\n\n  useEffect(() => {\n    if (videoRef.current) {\n      videoRef.current.preload = \"1\";\n      videoRef.current.volume = 0;\n    }\n  }, [videoRef.current]);\n\n  const toggle = () => {\n    if (videoRef.current) {\n      videoRef.current.paused\n        ? videoRef.current.play()\n        : videoRef.current.pause();\n    }\n  };\n\n  return (\n    <video\n      className={style.video}\n      loop\n      preload=\"none\"\n      ref={videoRef}\n      onMouseEnter={interaction === \"HOVER\" ? toggle : () => console.log(\"X\")}\n      onMouseLeave={interaction === \"HOVER\" ? toggle : () => console.log(\"X\")}\n      onClick={interaction === \"CLICK\" ? toggle : () => console.log(\"X\")}\n    >\n      <source src={videoPath} type=\"video/mp4\"></source>\n    </video>\n  );\n};\n\nexport default LivePhoto;\n";
 
 /***/ }),
 
@@ -52665,45 +52791,40 @@ var LivePhoto = function LivePhoto(_ref) {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     if (videoRef.current) {
       videoRef.current.preload = "1";
+      videoRef.current.volume = 0;
     }
   }, [videoRef.current]);
 
-  var toggle = function toggle() {
-    if (videoRef.current) {
+  var toggle = function toggle(currentInteraction) {
+    if (videoRef.current && currentInteraction === interaction) {
       videoRef.current.paused ? videoRef.current.play() : videoRef.current.pause();
     }
   };
+
+  var play = function play() {};
 
   return __jsx("video", {
     className: _livePhoto_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.video,
     loop: true,
     preload: "none",
     ref: videoRef,
-    onMouseEnter: interaction === "HOVER" ? toggle : function () {
-      return console.log("hei");
+    onMouseEnter: function onMouseEnter() {
+      return toggle("HOVER");
     },
-    onMouseLeave: interaction === "HOVER" ? toggle : function () {
-      return console.log("hei");
+    onMouseLeave: function onMouseLeave() {
+      return toggle("HOVER");
     },
-    onClick: interaction === "CLICK" ? toggle : function () {
-      return console.log("hei");
+    onClick: function onClick() {
+      return toggle("CLICK");
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 32
     },
     __self: this
   }, __jsx("source", {
     src: videoPath,
     type: "video/mp4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }), __jsx("source", {
-    src: "https://giant.gfycat.com/VerifiableTerrificHind.webm",
-    type: "video/webm",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
@@ -52713,6 +52834,67 @@ var LivePhoto = function LivePhoto(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LivePhoto);
+
+/***/ }),
+
+/***/ "./pages/index.module.css":
+/*!********************************!*\
+  !*** ./pages/index.module.css ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/postcss-loader/src??__nextjs_postcss!./index.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./pages/index.module.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/postcss-loader/src??__nextjs_postcss!./index.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./pages/index.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/postcss-loader/src??__nextjs_postcss!./index.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./pages/index.module.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
 
 /***/ }),
 
@@ -52729,48 +52911,58 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _FunnyText_funnyText__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FunnyText/funnyText */ "./pages/FunnyText/funnyText.tsx");
 /* harmony import */ var _AboutLivePhoto_aboutLivePhoto__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AboutLivePhoto/aboutLivePhoto */ "./pages/AboutLivePhoto/aboutLivePhoto.tsx");
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.module.css */ "./pages/index.module.css");
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_module_css__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/mortenovrebo/Prosjekt/suppeland/pages/index.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 var Home = function Home() {
   return __jsx("div", {
-    className: "App",
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.app,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx("div", {
+    className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.container,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
     },
     __self: this
   }, __jsx("header", {
     className: "App-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 9
     },
     __self: this
   }, __jsx(_FunnyText_funnyText__WEBPACK_IMPORTED_MODULE_1__["default"], {
     text: "RANGO",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: this
   })), __jsx(_AboutLivePhoto_aboutLivePhoto__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     },
     __self: this
-  }));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!***********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fmortenovrebo%2FProsjekt%2Fsuppeland%2Fpages%2Findex.tsx ***!
   \***********************************************************************************************************************************/
@@ -52793,5 +52985,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
