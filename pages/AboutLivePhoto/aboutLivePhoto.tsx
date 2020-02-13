@@ -6,7 +6,6 @@ import { tomorrow } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const AboutLive = () => {
   const [showImplementation, setShowImplementation] = useState(false);
-  const copyText = () => {};
   return (
     <section>
       <h3>Live Photo</h3>
@@ -15,11 +14,11 @@ const AboutLive = () => {
       </p>
       <div className={style.super}>
         <div>
-          <div>click to play and pause</div>
+          <div>Klikk på bildet</div>
           <LivePhoto interaction={"CLICK"} videoPath={"images/jonas.mp4"} />
         </div>
         <div>
-          <div>hover to play</div>
+          <div>Hold musen over</div>
           <LivePhoto interaction={"HOVER"} videoPath={"images/linn.mp4"} />
         </div>
       </div>

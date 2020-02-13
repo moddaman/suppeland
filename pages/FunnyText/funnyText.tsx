@@ -50,8 +50,6 @@ const FunnyText = ({ text }: IProps) => {
   };
 
   const enlargeFont = (symbol: IText, index: number) => {
-    console.log(index);
-
     const newSymbols = symbols.map<IText>((s, i) => {
       if (i === index) {
         return {

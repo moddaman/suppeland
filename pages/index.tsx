@@ -6,11 +6,17 @@ const Home = () => {
   return (
     <div className={style.app}>
       <div className={style.container}>
-        <header className="App-header">
-          <FunnyText text={"RANGO"} />
-        </header>
+        <FunnyText text={"RANGO"} />
         <AboutLive />
       </div>
+      <style jsx global>{`
+        body {
+          background-color: #ecf0f1;
+          paddding: 0px;
+          margin: 0px;
+          min-height: 1000px;
+        }
+      `}</style>
     </div>
   );
 };

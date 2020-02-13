@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -139,35 +139,38 @@ const AboutLive = () => {
     0: showImplementation,
     1: setShowImplementation
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-
-  const copyText = () => {};
-
   return __jsx("section", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: undefined
   }, "Live Photo"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: undefined
   }, "En React komponent for \xE5 vise \"live photos\" ", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: undefined
   })), __jsx("div", {
     className: _aboutLivePhoto_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.super,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -179,44 +182,38 @@ const AboutLive = () => {
       lineNumber: 17
     },
     __self: undefined
-  }, __jsx("div", {
+  }, "Klikk p\xE5 bildet"), __jsx(_LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    interaction: "CLICK",
+    videoPath: "images/jonas.mp4",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: undefined
-  }, "click to play and pause"), __jsx(_LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    interaction: "CLICK",
-    videoPath: "images/jonas.mp4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
   })), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: undefined
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 21
     },
     __self: undefined
-  }, "hover to play"), __jsx(_LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "Hold musen over"), __jsx(_LivePhoto_livePhoto__WEBPACK_IMPORTED_MODULE_1__["default"], {
     interaction: "HOVER",
     videoPath: "images/linn.mp4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
     },
     __self: undefined
   }))), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 25
     },
     __self: undefined
   }, "Pr\xF8vde f\xF8rst Apple sitt LivePhotosKit JS for \xE5 vise \"live photos\", men fant ut at det var mye lettere \xE5 bare bruke HTML Video."), __jsx(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_3__["Prism"], {
@@ -224,14 +221,14 @@ const AboutLive = () => {
     style: react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4__["tomorrow"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     },
     __self: undefined
   }, usageString), __jsx("button", {
     onClick: () => setShowImplementation(!showImplementation),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: undefined
   }, showImplementation ? "hide implementation" : "Show implementation"), showImplementation && __jsx(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_3__["Prism"], {
@@ -239,13 +236,13 @@ const AboutLive = () => {
     style: react_syntax_highlighter_dist_cjs_styles_prism__WEBPACK_IMPORTED_MODULE_4__["tomorrow"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 36
     },
     __self: undefined
   }, codeString), __jsx("code", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 40
     },
     __self: undefined
   }));
@@ -392,7 +389,6 @@ const FunnyText = ({
   };
 
   const enlargeFont = (symbol, index) => {
-    console.log(index);
     const newSymbols = symbols.map((s, i) => {
       if (i === index) {
         return _objectSpread({}, s, {
@@ -418,7 +414,7 @@ const FunnyText = ({
     onMouseOut: defaultText,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 75
     },
     __self: undefined
   }, symbols.map((symbol, index) => {
@@ -436,7 +432,7 @@ const FunnyText = ({
       className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(currentStyle),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87
+        lineNumber: 85
       },
       __self: undefined
     }, index < currentIndex ? symbol.symbol : "");
@@ -579,62 +575,61 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _FunnyText_funnyText__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FunnyText/funnyText */ "./pages/FunnyText/funnyText.tsx");
-/* harmony import */ var _AboutLivePhoto_aboutLivePhoto__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AboutLivePhoto/aboutLivePhoto */ "./pages/AboutLivePhoto/aboutLivePhoto.tsx");
-/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.module.css */ "./pages/index.module.css");
-/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_module_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _FunnyText_funnyText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FunnyText/funnyText */ "./pages/FunnyText/funnyText.tsx");
+/* harmony import */ var _AboutLivePhoto_aboutLivePhoto__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AboutLivePhoto/aboutLivePhoto */ "./pages/AboutLivePhoto/aboutLivePhoto.tsx");
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index.module.css */ "./pages/index.module.css");
+/* harmony import */ var _index_module_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_module_css__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/mortenovrebo/Prosjekt/suppeland/pages/index.tsx";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 
 const Home = () => {
   return __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.app,
+    className: "jsx-1011943476" + " " + (_index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.app || ""),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: undefined
   }, __jsx("div", {
-    className: _index_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.container,
+    className: "jsx-1011943476" + " " + (_index_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.container || ""),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: undefined
-  }, __jsx("header", {
-    className: "App-header",
+  }, __jsx(_FunnyText_funnyText__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    text: "RANGO",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: undefined
-  }, __jsx(_FunnyText_funnyText__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    text: "RANGO",
+  }), __jsx(_AboutLivePhoto_aboutLivePhoto__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: undefined
-  })), __jsx(_AboutLivePhoto_aboutLivePhoto__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
+  })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "1011943476",
     __self: undefined
-  })));
+  }, "body{background-color:#ecf0f1;paddding:0px;margin:0px;min-height:1000px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tb3J0ZW5vdnJlYm8vUHJvc2pla3Qvc3VwcGVsYW5kL3BhZ2VzL2luZGV4LnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFXeUIsQUFHb0MseUJBQ1osYUFDRixXQUNPLGtCQUNwQiIsImZpbGUiOiIvVXNlcnMvbW9ydGVub3ZyZWJvL1Byb3NqZWt0L3N1cHBlbGFuZC9wYWdlcy9pbmRleC50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgRnVubnlUZXh0IGZyb20gXCIuL0Z1bm55VGV4dC9mdW5ueVRleHRcIjtcbmltcG9ydCBBYm91dExpdmUgZnJvbSBcIi4vQWJvdXRMaXZlUGhvdG8vYWJvdXRMaXZlUGhvdG9cIjtcbmltcG9ydCBzdHlsZSBmcm9tIFwiLi9pbmRleC5tb2R1bGUuY3NzXCI7XG5cbmNvbnN0IEhvbWUgPSAoKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlLmFwcH0+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGUuY29udGFpbmVyfT5cbiAgICAgICAgPEZ1bm55VGV4dCB0ZXh0PXtcIlJBTkdPXCJ9IC8+XG4gICAgICAgIDxBYm91dExpdmUgLz5cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2VjZjBmMTtcbiAgICAgICAgICBwYWRkZGluZzogMHB4O1xuICAgICAgICAgIG1hcmdpbjogMHB4O1xuICAgICAgICAgIG1pbi1oZWlnaHQ6IDEwMDBweDtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgSG9tZTtcbiJdfQ== */\n/*@ sourceURL=/Users/mortenovrebo/Prosjekt/suppeland/pages/index.tsx */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/
@@ -687,6 +682,17 @@ module.exports = require("react-syntax-highlighter");
 /***/ (function(module, exports) {
 
 module.exports = require("react-syntax-highlighter/dist/cjs/styles/prism");
+
+/***/ }),
+
+/***/ "styled-jsx/style":
+/*!***********************************!*\
+  !*** external "styled-jsx/style" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-jsx/style");
 
 /***/ })
 
